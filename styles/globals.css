@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bandp_red: #dc3545;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  --swiper-navigation-color: var(--bandp_red);
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--bandp_red);
+}
