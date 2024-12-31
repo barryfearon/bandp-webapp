@@ -13,17 +13,17 @@ interface HomeProps {
 
 const Home = ({ carouselImages, textContent }: HomeProps) => {
   return (
-    <div>
+    <div className={`bandp-web`}>
       <Navbar />
       <Header />
       <main>
         <ImageCarousel images={carouselImages} />
-        <TextArea content={textContent} />
-        <ServiceAreas />
-        <section id="quotation" className="p-8 bg-gray-100 text-center">
+        <section id="quotation" className="pt-8 bg-gray-100 text-center">
           <h2 className="text-2xl mb-4">Request a Free Quotation</h2>
           <FreeQuotation />
         </section>
+        <TextArea content={textContent} />
+        <ServiceAreas />
       </main>
     </div>
   );

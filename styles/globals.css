@@ -6,6 +6,10 @@
   --bandp_red: #dc3545;
 }
 
+body {
+  background-color: var(--bandp_red);
+}
+
 .swiper-button-prev,
 .swiper-button-next {
   --swiper-navigation-color: var(--bandp_red);

@@ -9,10 +9,15 @@ const FreeQuotation = () => {
     e.preventDefault();
     if (!email.includes("@")) return alert("Please enter a valid email.");
 
-    const res = await fetch("/api/submit", {
+    const res = await fetch("https://formspree.io/f/xeqrlnzr", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, message }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email,
+        message,
+      }),
     });
 
     if (res.ok) {
@@ -27,13 +32,13 @@ const FreeQuotation = () => {
     <>
       <button
         onClick={() => setShowModal(true)}
-        className="bg-blue-600 text-white p-4 rounded"
+        className="bg-bandp_red text-white p-2 rounded"
       >
         Request Free Quotation
       </button>
 
       {showModal && (
-        <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center">
+        <div className="z-10 fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center">
           <div className="bg-white p-8 rounded shadow-md">
             <h2 className="text-xl mb-4">Request a Free Quotation</h2>
             <form onSubmit={handleSubmit}>
@@ -60,7 +65,7 @@ const FreeQuotation = () => {
                 </button>
                 <button
                   type="submit"
-                  className="bg-blue-600 text-white p-2 rounded"
+                  className="bg-bandp_red text-white p-2 rounded"
                 >
                   Submit
                 </button>

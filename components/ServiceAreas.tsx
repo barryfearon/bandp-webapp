@@ -1,8 +1,9 @@
-// components/ServiceAreas.tsx
+import Image from "next/image";
+
 const services = [
-  { title: "Interior Painting", icon: "/interior-icon.svg" },
-  { title: "Exterior Painting", icon: "/exterior-icon.svg" },
-  { title: "Wallpapering", icon: "/wallpaper-icon.svg" },
+  { title: "Interior Painting", icon: "/images/interior-icon.svg" },
+  { title: "Exterior Painting", icon: "/images/exterior-icon.svg" },
+  { title: "Wallpapering", icon: "/images/wallpaper-icon.svg" },
 ];
 
 const ServiceAreas = () => (
@@ -12,9 +13,11 @@ const ServiceAreas = () => (
       <div className="flex justify-around">
         {services.map((service, index) => (
           <div key={index} className="text-center">
-            <img
+            <Image
               src={service.icon}
               alt={service.title}
+              width={50}
+              height={50}
               className="w-16 h-16 mx-auto mb-2"
             />
             <p>{service.title}</p>
