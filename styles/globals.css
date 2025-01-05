@@ -10,6 +10,10 @@ body {
   background-color: var(--bandp_red);
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 .swiper-button-prev,
 .swiper-button-next {
   --swiper-navigation-color: var(--bandp_red);

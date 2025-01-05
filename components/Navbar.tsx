@@ -45,7 +45,7 @@ const Navbar = () => {
           <Link className={`mx-2`} href="/services">
             <div>Services</div>
           </Link>
-          <Link className={`mx-2`} href="/gallery">
+          <Link className={`mx-2`} href="/photo-gallery">
             <div>Gallery</div>
           </Link>
         </div>
