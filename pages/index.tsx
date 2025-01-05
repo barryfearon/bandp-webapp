@@ -13,7 +13,7 @@ interface HomeProps {
 
 const Home = ({ carouselImages, textContent }: HomeProps) => {
   return (
-    <div className={`bandp-web`}>
+    <>
       <Navbar />
       <Header />
       <main>
@@ -25,7 +25,7 @@ const Home = ({ carouselImages, textContent }: HomeProps) => {
         <TextArea content={textContent} />
         <ServiceAreas />
       </main>
-    </div>
+    </>
   );
 };
 
