@@ -4,7 +4,7 @@ function assetLink(asset: string) {
   return `/images/photos/community/${asset}`;
 }
 
-const aboutUsPhotos = [
+const communityPhotos = [
   {
     asset: "BoxingGroup.jpg",
     width: 1920,
@@ -30,7 +30,7 @@ const aboutUsPhotos = [
       alt,
       width,
       height,
-    }) as Photo,
+    } as Photo)
 );
 
-export default aboutUsPhotos;
+export default communityPhotos;

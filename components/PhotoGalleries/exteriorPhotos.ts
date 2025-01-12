@@ -4,7 +4,7 @@ function assetLink(asset: string) {
   return `/images/photos/exterior/${asset}`;
 }
 
-const aboutUsPhotos = [
+const exteriorPhotos = [
   {
     asset: "InsideWheel.jpg",
     width: 540,
@@ -36,7 +36,7 @@ const aboutUsPhotos = [
       alt,
       width,
       height,
-    }) as Photo,
+    } as Photo)
 );
 
-export default aboutUsPhotos;
+export default exteriorPhotos;

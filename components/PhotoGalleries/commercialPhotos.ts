@@ -4,7 +4,7 @@ function assetLink(asset: string) {
   return `/images/photos/commercial/${asset}`;
 }
 
-const aboutUsPhotos = [
+const commercialPhotos = [
   {
     asset: "GoldPhoneBox.PNG",
     width: 180,
@@ -54,7 +54,7 @@ const aboutUsPhotos = [
       alt,
       width,
       height,
-    }) as Photo,
+    } as Photo)
 );
 
-export default aboutUsPhotos;
+export default commercialPhotos;

@@ -19,7 +19,7 @@ import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 
-import aboutUsPhotos from "@/components/PhotoGalleries/aboutUsPhotos";
+import recentPhotos from "@/components/PhotoGalleries/recentPhotos";
 
 function renderNextImage(
   { alt = "", title, sizes }: RenderImageProps,
@@ -51,9 +51,9 @@ export default function PhotoGallery() {
   return (
     <>
       <div className="container mx-auto mb-8">
-        <h2 className="text-2xl mb-4 text-white">About Us Gallery</h2>
+        <h2 className="text-2xl mb-4 text-white">Recent Work Gallery</h2>
         <RowsPhotoAlbum
-          photos={aboutUsPhotos}
+          photos={recentPhotos}
           render={{ image: renderNextImage }}
           defaultContainerWidth={1200}
           onClick={({ index }) => setIndex(index)}
@@ -66,7 +66,7 @@ export default function PhotoGallery() {
         />
 
         <Lightbox
-          slides={aboutUsPhotos}
+          slides={recentPhotos}
           open={index >= 0}
           index={index}
           close={() => setIndex(-1)}

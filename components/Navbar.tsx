@@ -31,7 +31,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-bandp_red text-white p-4 bottom-0 fixed md:relative left-0 right-0">
+      <nav className="bg-bandp_red text-white p-4 bottom-0 fixed md:relative left-0 right-0 z-10">
         <div className="container mx-auto flex justify-center text-xs lg:text-lg text-center">
           <Link className={`mx-2`} href="/">
             <div>Home</div>

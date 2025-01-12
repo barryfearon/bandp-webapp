@@ -50,8 +50,8 @@ export default function PhotoGallery() {
 
   return (
     <>
-      <div className="container mx-auto">
-        <h2>Commercial Gallery</h2>
+      <div className="container mx-auto mb-8">
+        <h2 className="text-2xl mb-4 text-white">Commercial Gallery</h2>
         <RowsPhotoAlbum
           photos={commercialPhotos}
           render={{ image: renderNextImage }}
