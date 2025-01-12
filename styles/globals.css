@@ -6,6 +6,10 @@
   --bandp_red: #dc3545;
 }
 
+main {
+  padding-bottom: 4rem;
+}
+
 body {
   background-color: var(--bandp_red);
 }

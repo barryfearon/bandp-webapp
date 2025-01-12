@@ -16,18 +16,20 @@ const PhotoGallery = () => {
     <>
       <Navbar />
       <Header />
-      <AboutUsPhotoGallery />
-      <CommercialPhotoGallery />
-      <CommunityPhotoGallery />
-      <ExteriorPhotoGallery />
-      <InteriorPhotoGallery />
-      <PreparationPhotoGallery />
-      <RecentPhotoGallery />
-      <SignwritingPhotoGallery />
-      <SpecialityPhotoGallery />
-      <div className="mb-8">
-        <WallpaperPhotoGallery />
-      </div>
+      <main>
+        <AboutUsPhotoGallery />
+        <CommercialPhotoGallery />
+        <CommunityPhotoGallery />
+        <ExteriorPhotoGallery />
+        <InteriorPhotoGallery />
+        <PreparationPhotoGallery />
+        <RecentPhotoGallery />
+        <SignwritingPhotoGallery />
+        <SpecialityPhotoGallery />
+        <div className="mb-8">
+          <WallpaperPhotoGallery />
+        </div>
+      </main>
     </>
   );
 };
