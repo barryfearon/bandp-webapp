@@ -27,7 +27,7 @@ const ImageCarousel = ({ images }: { images: string[] }) => (
           width={1920}
           height={800}
           alt={`Slide ${index}`}
-          className="w-full h-full object-cover"
+          className="w-full h-96 object-cover object-bottom"
           priority
         />
       </SwiperSlide>

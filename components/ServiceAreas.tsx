@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const services = [
   { title: "Interior Painting", icon: "/images/interior-icon.svg" },
@@ -7,10 +8,14 @@ const services = [
 ];
 
 const ServiceAreas = () => (
-  <section className="p-8 bg-white">
+  <section className="py-8 bg-white">
     <div className="container mx-auto">
-      <h2 className="text-center text-2xl mb-6">Our Services</h2>
-      <div className="flex justify-around">
+      <h2 className="text-center  text-2xl mb-2">Our Services</h2>
+      <h3 className="text-center text-md mb-6">
+        Covering all aspects of interior decorating, exterior decorating,
+        wallpapering, and dust-free sanding.
+      </h3>
+      <Link href="/services" className="flex justify-around">
         {services.map((service, index) => (
           <div key={index} className="text-center">
             <Image
@@ -23,7 +28,7 @@ const ServiceAreas = () => (
             <p>{service.title}</p>
           </div>
         ))}
-      </div>
+      </Link>
     </div>
   </section>
 );

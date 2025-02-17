@@ -1,28 +1,38 @@
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import ImageCarousel from "../components/ImageCarousel";
-import TextArea from "../components/TextArea";
+import FreeQuotation from "@/components/FreeQuotation";
+import AboutUs from "@/components/AboutUs";
 import ServiceAreas from "../components/ServiceAreas";
-import FreeQuotation from "../components/FreeQuotation";
+
 import { GetStaticProps } from "next";
 
-interface HomeProps {
+interface AboutProps {
   carouselImages: string[];
   textContent: string;
 }
 
-const Home = ({ carouselImages, textContent }: HomeProps) => {
+const About = ({ carouselImages }: AboutProps) => {
   return (
     <>
       <Navbar />
       <Header />
-      <main className={`bg-gray-100`}>
+      <main>
         <ImageCarousel images={carouselImages} />
-        <section id="quotation" className="pt-8 text-center">
+
+        <section id="quotation" className="pt-8 bg-gray-100 text-center">
           <h2 className="text-2xl mb-4">Request a Free Quotation</h2>
           <FreeQuotation />
         </section>
-        <TextArea content={textContent} />
+        <section
+          id="about"
+          className="bg-gray-100 text-center md:grid md:grid-cols-6"
+        >
+          <div className="col-start-2 col-span-4">
+            <AboutUs />
+          </div>
+        </section>
+
         <ServiceAreas />
       </main>
     </>
@@ -44,4 +54,4 @@ export const getStaticProps: GetStaticProps = async () => {
   };
 };
 
-export default Home;
+export default About;

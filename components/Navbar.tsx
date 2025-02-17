@@ -32,20 +32,23 @@ const Navbar = () => {
   return (
     <>
       <nav className="bg-bandp_red text-white p-4 bottom-0 fixed md:relative left-0 right-0 z-10 border-white border-t-2 md:border-t-0">
-        <div className="container mx-auto flex justify-center text-xs lg:text-lg text-center">
-          <Link className={`mx-2`} href="/">
+        <div className="flex justify-around text-xs lg:text-lg text-center">
+          <Link className={`mx-2 font-semibold`} href="/">
             <div>Home</div>
           </Link>
-          <a className={`mx-2`} onClick={() => setShowModal(true)}>
+          <a
+            className={`mx-2 font-semibold`}
+            onClick={() => setShowModal(true)}
+          >
             <div>Contact Us</div>
           </a>
-          <Link className={`mx-2`} href="/about-us">
+          <Link className={`mx-2 font-semibold`} href="/about-us">
             <div>About Us</div>
           </Link>
-          <Link className={`mx-2`} href="/services">
+          <Link className={`mx-2 font-semibold`} href="/services">
             <div>Services</div>
           </Link>
-          <Link className={`mx-2`} href="/photo-gallery">
+          <Link className={`mx-2 font-semibold`} href="/photo-gallery">
             <div>Gallery</div>
           </Link>
         </div>

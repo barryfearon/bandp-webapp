@@ -1,5 +1,5 @@
 const TextArea = ({ content }: { content: string }) => (
-  <section className="p-8 lg:p-12 bg-gray-100">
+  <section className="py-8 lg:p-12 bg-gray-100">
     <div className="container mx-auto text-center">
       <h2 className={`text-2xl mb-4`}>
         Professional Painter and Decorators in the Isle of Man

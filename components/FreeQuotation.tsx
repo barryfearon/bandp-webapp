@@ -32,9 +32,9 @@ const FreeQuotation = () => {
     <>
       <button
         onClick={() => setShowModal(true)}
-        className="bg-bandp_red text-white p-2 rounded"
+        className="bg-bandp_red text-white p-2 rounded font-semibold text-lg"
       >
-        Request Free Quotation
+        Contact Us Now
       </button>
 
       {showModal && (
