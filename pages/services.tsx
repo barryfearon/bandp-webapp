@@ -2,7 +2,6 @@ import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import ImageCarousel from "../components/ImageCarousel";
-import ServiceAreas from "../components/ServiceAreas";
 
 import { GetStaticProps } from "next";
 
