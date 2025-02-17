@@ -123,9 +123,9 @@ const Services = ({ carouselImages }: ServicesProps) => {
             </p>
           </div>
           <Image
-            src={exterior}
+            src={commercial}
             width={800}
-            alt={`preparation`}
+            alt={`commercial`}
             className={`object-cover`}
           />
         </div>
