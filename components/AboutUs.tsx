@@ -1,5 +1,5 @@
 const AboutUs = () => (
-  <section className="p-8 lg:p-12 bg-gray-100">
+  <section className="py-8 lg:p-12 bg-gray-100">
     <div className="container mx-auto text-center">
       <h2 className={`text-2xl mb-4`}>BUCHANAN & PITTS LTD</h2>
       <p className={`mb-3 leading-loose`}>
